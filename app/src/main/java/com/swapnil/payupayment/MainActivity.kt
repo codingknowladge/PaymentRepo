@@ -38,7 +38,7 @@ paymentSetup()
         val payUPaymentParams = PayUPaymentParams.Builder()
             .setAmount("1.0")
             .setIsProduction(true)
-            .setKey("VhmjTAqj")
+            .setKey("your key")
             .setProductInfo("Macbook Pro")
             .setPhone("8888888888")
             .setTransactionId(System.currentTimeMillis().toString())
@@ -98,7 +98,7 @@ paymentSetup()
                         //Do not generate hash from local, it needs to be calculated from server side only. Here, hashString contains hash created from your server side.
                         val hash: String? = HashGenerationUtils.generateHashFromSDK(
                             hashData.toString(),
-                            "vLD8DWw2s0"
+                            "your key"
                         )
                         if (!TextUtils.isEmpty(hash)) {
                             val dataMap: HashMap<String, String?> = HashMap()
